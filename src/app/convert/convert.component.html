@@ -8,6 +8,16 @@
             <input type="number" [(ngModel)]="meterValue" name="meterValue" id="meterValue" required>
             <button type="submit">Konvertera till feet</button>
         </form>
-        <p>Resultat: {{ feetValue }} Feet</p>
+        <p>Resultat: {{ feetResult }} Feet</p>
+    </div>
+
+    <div id="feetToMeter">
+        <h3>Feet till meter</h3>
+        <form (ngSubmit)="convertFeettoMeter()">
+            <label for="meterValue">Feet:</label>
+            <input type="number" [(ngModel)]="feetValue" name="feetValue" id="feetValue" required>
+            <button type="submit">Konvertera till meter</button>
+        </form>
+        <p>Resultat: {{ meterResult }} meter</p>
     </div>
 </div>

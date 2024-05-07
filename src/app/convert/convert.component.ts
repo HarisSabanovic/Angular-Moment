@@ -12,23 +12,28 @@ export class ConvertComponent {
 
   meterValue: number = 0;
   feetValue: number = 0;
+  feetResult: number = 0;
+  meterResult: number = 0;
+
   celsiusValue: number = 0;
   fahrenheitValue: number = 0;
+  celsiusResult: number = 0;
+  fahrenheitResult: number = 0;
 
   convertMetertoFeet() {
-    this.feetValue = this.meterValue * 3.28084;
+    this.feetResult = this.meterValue * 3.28084;
   }
 
   convertFeettoMeter() {
-    this.meterValue = this.feetValue / 3.28084;
+    this.meterResult = this.feetValue / 3.28084;
   }
 
   convertCelsiustoFahrenheit(){
-    this.fahrenheitValue = (this.celsiusValue * 9/5) + 32;
+    this.fahrenheitResult = (this.celsiusValue * 9/5) + 32;
   }
 
   convertFahrenheitToCelsius() {
-    this.celsiusValue = (this.fahrenheitValue - 32) * 5/9;
+    this.celsiusResult = (this.fahrenheitValue - 32) * 5/9;
   }
 
 }
