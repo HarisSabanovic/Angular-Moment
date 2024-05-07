@@ -1,0 +1,22 @@
+nav {
+    background-color: #658689;
+    padding: 15px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.current {
+    background-color: #92AC8C;
+    border-radius: 10px;
+}
