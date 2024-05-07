@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-convert',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './convert.component.html',
   styleUrl: './convert.component.scss'
 })

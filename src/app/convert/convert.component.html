@@ -1,1 +1,13 @@
-<h1>Convert</h1>
+<div class="converter">
+    <h2>Enhetsomvandlare</h2>
+
+    <div id="meterToFeet">
+        <h3>Meter till Feet</h3>
+        <form (ngSubmit)="convertMetertoFeet()">
+            <label for="meterValue">Meter:</label>
+            <input type="number" [(ngModel)]="meterValue" name="meterValue" id="meterValue" required>
+            <button type="submit">Konvertera till feet</button>
+        </form>
+        <p>Resultat: {{ feetValue }} Feet</p>
+    </div>
+</div>
