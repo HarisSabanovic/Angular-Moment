@@ -1,8 +1,12 @@
-<nav>
-  <ul>
-    <li><a routerLink="/home">Startsidan</a></li>
-    <li><a routerLink="/about">Om uppgift</a></li>
-    <li><a routerLink="/convert">Convert</a></li>
-  </ul>
-</nav>
-<router-outlet />
+<app-header />
+
+<div class="container">
+  <main>
+
+    <router-outlet />
+
+  </main>
+</div>
+
+<app-footer />
+
