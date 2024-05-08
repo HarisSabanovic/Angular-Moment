@@ -1,7 +1,7 @@
-<div class="converter">
+<div class="converterDiv">
     <h2>Enhetsomvandlare</h2>
 
-    <div id="meterToFeet">
+    <div class="converter">
         <h3>Meter till Feet</h3>
         <form (ngSubmit)="convertMetertoFeet()">
             <label for="meterValue">Meter:</label>
@@ -11,13 +11,33 @@
         <p>Resultat: {{ feetResult }} Feet</p>
     </div>
 
-    <div id="feetToMeter">
-        <h3>Feet till meter</h3>
+    <div class="converter">
+        <h3>Feet till Meter</h3>
         <form (ngSubmit)="convertFeettoMeter()">
             <label for="meterValue">Feet:</label>
             <input type="number" [(ngModel)]="feetValue" name="feetValue" id="feetValue" required>
             <button type="submit">Konvertera till meter</button>
         </form>
         <p>Resultat: {{ meterResult }} meter</p>
+    </div>
+
+    <div class="converter">
+        <h3>Celsius till Fahrenheit</h3>
+        <form (ngSubmit)="convertCelsiustoFahrenheit()">
+            <label for="celsiusValue">Celsius</label>
+            <input type="number" [(ngModel)]="celsiusValue" name="celsiusValue" id="celsiusValue" required>
+            <button type="submit">Konvertera till fahrenheit</button>
+        </form>
+        <p>Resultat: {{ fahrenheitResult }} fahrenheit</p>
+    </div>
+
+    <div class="converter">
+        <h3>Fahrenheit till Celsius</h3>
+        <form (ngSubmit)="convertFahrenheitToCelsius()">
+            <label for="fahrenheitValue">Fahrenheit:</label>
+            <input type="number" [(ngModel)]="fahrenheitValue" name="fahrenheitValue" id="fahrenheitValue" required>
+            <button type="submit">Konvertera till celsius</button>
+        </form>
+        <p>Resultat: {{ celsiusResult }} celsius</p>
     </div>
 </div>
