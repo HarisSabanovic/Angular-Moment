@@ -16,6 +16,11 @@ a {
     padding: 10px;
 }
 
+a:hover {
+    background-color: darken($color: #92AC8C, $amount: 10%);
+    border-radius: 10px;
+}
+
 .current {
     background-color: #92AC8C;
     border-radius: 10px;
