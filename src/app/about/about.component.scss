@@ -1,0 +1,17 @@
+.about-container {
+    width: 70%;
+    margin-inline: auto;
+}
+
+.about-container h1 {
+    text-align: center;
+    margin: 6%;
+}
+
+.about-container p {
+    margin-bottom: 6%;
+}
+
+.about-container p:last-of-type {
+    margin-bottom: 100px;
+}
